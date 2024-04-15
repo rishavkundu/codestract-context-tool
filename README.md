@@ -1,7 +1,7 @@
 # Codestract — Export codebase context for LLMs.
 <br>
 <div>
-<img src="feature.png" alt="codestract-main" width="500"/>
+<img src="Codestract.png" alt="codestract-main" width="500"/>
 </div><br>
 
 
