@@ -1,6 +1,8 @@
 # Codestract — Export project & provide LLMs context on your code.
 
+
 ![Image-Kit Logo](feature.png)
+
 
 Codestract is a tool designed to identify and collect text files from specified directories, excluding image files and other specified exclusions. This functionality facilitates efficient file management and data aggregation, making it an essential tool for developers who need to organize and analyze their project files effectively.
   
