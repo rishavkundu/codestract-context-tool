@@ -1,4 +1,4 @@
-# Codestract | Export project & provide LLMs context on your code.
+# Codestract — Export project & provide LLMs context on your code.
 
 ![Image-Kit Logo](feature.png)
 
