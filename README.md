@@ -1,7 +1,7 @@
 # Codestract — Provide LLMs with context on your codebase.
 
 <div>
-<center><img src="feature.png" alt="codestract-main" width="500"/><center></center>
+<center><img src="feature.png" alt="codestract-main" width="500"/></center>
 </div>
 
 
