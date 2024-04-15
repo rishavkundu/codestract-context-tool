@@ -1,4 +1,4 @@
-# Codestract — Provide LLMs with context on your codebase.
+# Codestract — Export codebase context for LLMs.
 <br>
 <div>
 <img src="feature.png" alt="codestract-main" width="500"/>
