@@ -1,4 +1,4 @@
-# Codestract — Codebase Context Extraction for LLMs
+# **Codestract** — Codebase Context Extraction for LLMs
 
 <br>
 
