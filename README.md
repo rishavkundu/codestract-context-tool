@@ -3,7 +3,7 @@
 <br>
 
 <div align="center">
-  <img src="Codestract.gif" alt="codestract-main" width="1280"/>
+  <img src="readme-image.gif" alt="codestract-main" width="1280"/>
 </div>
 <br>
 
