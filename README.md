@@ -1,7 +1,8 @@
 # Codestract — Provide LLMs with context on your codebase.
 
-
-<img src="feature.png" alt="codestract-main" width="400"/>
+<div>
+<center><img src="feature.png" alt="codestract-main" width="500"/><center></center>
+</div>
 
 
 Codestract is a tool designed to identify and collect text files from specified directories, excluding image files and other specified exclusions. This functionality facilitates efficient file management and data aggregation, making it an essential tool for developers who need to organize and analyze their project files effectively.
