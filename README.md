@@ -2,8 +2,8 @@
 
 <br>
 
-<div>
-<img src="Codestract.png" alt="codestract-main" width="500"/>
+<div align="center">
+  <img src="Codestract.png" alt="codestract-main" width="500"/>
 </div>
 <br>
 
