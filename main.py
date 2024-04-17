@@ -8,15 +8,14 @@ def is_image_file(file_name: str) -> bool:
     _, extension = os.path.splitext(file_name)
     return extension.lower() in image_extensions
 
-def append_files_to_project(directory: str = '.', output_file: str = 'project_context_export.txt', excluded_files: set = None):
+def append_files_to_project(directory: str = '.', excluded_files: set = None):
     output_dir = '.codestract'
     os.makedirs(output_dir, exist_ok=True)
-    output_file_path = os.path.join(output_dir, output_file)
 
     if excluded_files is None:
-        excluded_files = {output_file, 'main.py'}
+        excluded_files = {'main.py'}
     else:
-        excluded_files.update({output_file, 'main.py'})
+        excluded_files.update({'main.py'})
 
     total_chars = 0
     file_count = 0
@@ -25,6 +24,9 @@ def append_files_to_project(directory: str = '.', output_file: str = 'project_co
     skipped_files = []
 
     start_time = datetime.now()
+    timestamp = start_time.strftime("%Y%m%d_%H%M%S")
+    output_file_name = f"project_export_{timestamp}.txt"
+    output_file_path = os.path.join(output_dir, output_file_name)
 
     try:
         with open(output_file_path, 'w', encoding='utf-8') as outfile:
@@ -58,7 +60,10 @@ def append_files_to_project(directory: str = '.', output_file: str = 'project_co
             summary += f'- Skipped files: {len(skipped_files)}\n'
             summary += f'- Execution time: {execution_time}\n'
 
+            outfile.write('-' * 40 + '\n')
             outfile.write(summary)
+            outfile.write('-' * 40 + '\n')
+
             logging.info(summary)
             print(summary)
 
@@ -99,10 +104,8 @@ def main():
     setup_logging()
     if append_files_to_project():
         logging.info("Code base exported successfully.")
-        print("Code base exported successfully.")
     else:
         logging.error("Failed to export code base.")
-        print("Failed to export code base.")
 
 if __name__ == "__main__":
     main()
