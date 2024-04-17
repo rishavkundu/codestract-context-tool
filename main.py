@@ -19,6 +19,9 @@ def append_files_to_project(directory: str = '.', output_file: str = 'project_co
     try:
         with open(output_file, 'w', encoding='utf-8') as outfile:
             for root, dirs, files in os.walk(directory):
+                # Skip directories named '.env' or '.venv'
+                dirs[:] = [d for d in dirs if d not in {'.env', '.venv'}]
+
                 for file in files:
                     if file not in excluded_files and not is_image_file(file):
                         file_path = os.path.join(root, file)
@@ -29,10 +32,11 @@ def append_files_to_project(directory: str = '.', output_file: str = 'project_co
                             outfile.write("\n\n")
                             total_chars += len(contents)
                             file_count += 1
+
             summary = f'Summary:\n- Total characters: {total_chars}\n- Total files processed: {file_count}\n'
             outfile.write(summary)
-            logging.info(summary)  # Log the summary information to the file and console
-            print(summary)  # Print the summary to the console
+            logging.info(summary)
+            print(summary)
         return True
     except Exception as e:
         logging.error(f"Failed to write to {output_file}: {e}")
@@ -42,16 +46,13 @@ def setup_logging():
     # Setup logging to file and console
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
-    
     # Create handlers
     stream_handler = logging.StreamHandler()
     file_handler = logging.FileHandler('logfile.log')
-    
     # Create formatter and add it to handlers
     formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     stream_handler.setFormatter(formatter)
     file_handler.setFormatter(formatter)
-    
     # Add handlers to the logger
     logger.addHandler(stream_handler)
     logger.addHandler(file_handler)
