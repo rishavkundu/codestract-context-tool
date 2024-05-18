@@ -1,0 +1,9 @@
+----------------------------------------
+Summary:
+- Total characters: 0
+- Total files processed: 0
+- Total file size: 0 bytes
+- Skipped directories: 0
+- Skipped files: 39
+- Execution time: 0:00:00.002264
+----------------------------------------
