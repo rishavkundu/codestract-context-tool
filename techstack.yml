@@ -1,0 +1,82 @@
+repo_name: rishavkundu/codestract-context-tool
+report_id: 977f7651eecc5ea4092040b703deecb3
+version: 0.1
+repo_type: Public
+timestamp: '2024-08-01T15:46:47+00:00'
+requested_by: rishavkundu
+provider: github
+branch: main
+detected_tools_count: 6
+tools:
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/rishavkundu/codestract-context-tool
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/rishavkundu/codestract-context-tool
+  detection_source: Repo Metadata
+- name: PyPI
+  description: A repository of software for the Python programming language
+  website_url: https://pypi.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Hosted Package Repository
+  image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/rishavkundu/codestract-context-tool/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Rishav Kundu
+  last_updated_on: 2024-04-15 19:38:35.000000000 Z
+- name: argparse
+  description: Python command-line parsing library
+  package_url: https://pypi.org/project/argparse
+  license: Python-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19871/default_d05f6f09935776629f62e8aed365805502c14921.png
+  detection_source_url: https://github.com/rishavkundu/codestract-context-tool/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Rishav Kundu
+  last_updated_on: 2024-04-15 19:38:35.000000000 Z
+- name: configparser
+  description: Updated configparser from Python 3.7 for Python 2.6+
+  package_url: https://pypi.org/project/configparser
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19879/default_2270bfab784e3d2c2d999d26b11ee478a9dad238.png
+  detection_source_url: https://github.com/rishavkundu/codestract-context-tool/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Rishav Kundu
+  last_updated_on: 2024-04-15 19:38:35.000000000 Z
+- name: typing
+  description: Type Hints for Python
+  package_url: https://pypi.org/project/typing
+  license: Python-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19868/default_bd86f80ade48cfe191d5781a2efa0e66fa22163a.png
+  detection_source_url: https://github.com/rishavkundu/codestract-context-tool/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Rishav Kundu
+  last_updated_on: 2024-04-15 19:38:35.000000000 Z
