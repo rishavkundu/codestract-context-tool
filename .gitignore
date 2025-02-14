@@ -1,0 +1,17 @@
+# Bytecode and cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE/editor configurations
+.vscode/
+settings.json
+
+# Temporary or exported files
+project_export_*
+
+# Virtual environments
+.venv/
+
+# Log files
+*.log

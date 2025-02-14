@@ -2,5 +2,6 @@ argparse
 configparser
 datetime
 logging
-os
 typing
+textual>=0.52.1
+hatchling>=1.21.1

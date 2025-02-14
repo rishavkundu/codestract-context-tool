@@ -1,0 +1,242 @@
+/* Theme Colors */
+$background: #212121;    /* Main background */
+$surface: #28282e;       /* Surface elements */
+$primary: #20403F;      /* Primary elements */
+$accent: #01695C;      /* Accent elements */
+$highlight: #1D3B35;   /* Highlights/Success */
+$text: #EEE;          /* Text color */
+
+Screen {
+    layout: grid;
+    grid-size: 2;
+    grid-columns: 45% 55%;
+    background: #212121;
+    color: #EEE;
+}
+
+DockView {
+    layout: horizontal;
+    background: $background;
+    height: 100%;
+    dock: top;
+}
+
+#tree-container {
+    width: 100%;
+    border-right: solid #20403F;
+    scrollbar-size: 1 1;
+    scrollbar-gutter: stable;
+    overflow-x: hidden;
+}
+
+#summary-container {
+    width: 100%;
+    padding: 0 1;
+    scrollbar-size: 1 1;
+    scrollbar-gutter: stable;
+    overflow-x: hidden;
+}
+
+/* Header */
+Header {
+    dock: top;
+    height: 2;
+    background: $surface;
+    color: $text;
+    content-align: center middle;
+    padding: 0 1;
+    border-bottom: solid $primary;
+}
+
+/* Footer */
+Footer {
+    dock: bottom;
+    height: 1;
+    background: $surface;
+    color: $text;
+    border-top: solid $primary;
+}
+
+/* Tree container */
+#tree-header {
+    height: 1;
+    padding: 0 1;
+    border-bottom: solid #20403F;
+    text-style: bold;
+}
+
+/* Directory tree */
+#file-tree {
+    width: 100%;
+    height: 100%;
+    padding: 0 1;
+    border: none;
+    scrollbar-size: 1 1;
+    scrollbar-gutter: stable;
+}
+
+/* Summary container */
+#selection-count {
+    height: 1;
+}
+
+#spacing {
+    height: 1;
+}
+
+#file-preview {
+    height: auto;
+}
+
+#export-summary {
+    margin-top: 1;
+}
+
+/* Button */
+#export-btn {
+    margin: 2 0;
+    min-width: 20;
+    background: $highlight;
+    color: $text;
+    border: none;
+    height: 3;
+    padding: 1 0;
+    text-style: bold;
+}
+
+#export-btn:hover {
+    background: $accent;
+}
+
+#export-btn:focus {
+    background: $highlight;
+}
+
+/* Tree node */
+.tree--cursor {
+    background: #01695C;
+    color: #EEE;
+    text-style: bold;
+}
+
+/* Markdown content */
+Static.markdown {
+    padding: 1;
+}
+
+Static.markdown > Text {
+    text-style: bold;
+    color: $text;
+}
+
+Static.markdown > Text.heading {
+    text-style: bold;
+    color: $text;
+    margin-top: 1;
+}
+
+Static.markdown > Text.code {
+    background: $surface;
+    color: $text;
+    padding: 0 1;
+}
+
+Static.markdown > Text.list {
+    margin-left: 2;
+}
+
+/* Section headers */
+.section-header {
+    background: $surface;
+    color: $text;
+    height: 1;
+    padding: 0 1;
+    border-bottom: solid $primary;
+}
+
+DirectoryTree {
+    border: none;
+    padding: 1;
+}
+
+DirectoryTree > .tree--cursor {
+    background: #01695C;
+    color: #EEE;
+}
+
+DirectoryTree > .tree--highlight {
+    background: #20403F;
+    color: #EEE;
+}
+
+/* Panel styling */
+Panel {
+    border: solid #20403F;
+    background: #28282e;
+    height: auto;
+    margin: 0;
+    width: 100%;
+}
+
+Panel > .title {
+    color: #EEE;
+    text-style: bold;
+}
+
+/* Table styling */
+Table {
+    width: 100%;
+    padding: 0;
+}
+
+Table > .header {
+    background: #20403F;
+    color: #EEE;
+}
+
+Table > .cell {
+    padding: 0 1;
+}
+
+Table > .cell--highlight {
+    color: #01695C;
+    text-style: bold;
+}
+
+Table > .cell--dim {
+    color: #EEE 60%;
+}
+
+/* Keyboard shortcuts styling */
+#shortcuts-legend {
+    margin-top: 1;
+}
+
+#shortcuts-legend Panel {
+    border: solid $primary;
+}
+
+#shortcuts-legend Table > .cell--key {
+    color: $accent;
+    text-style: bold;
+}
+
+#shortcuts-legend Table > .cell--arrow {
+    color: $text 60%;
+}
+
+#shortcuts-legend Table > .cell--action {
+    color: $text;
+}
+
+/* Scrollbar styling for all scrollable containers */
+ScrollableContainer {
+    scrollbar-size: 1 1;
+    scrollbar-gutter: stable;
+    overflow-x: hidden;
+}
+
+ScrollableContainer:focus {
+    scrollbar-color: $accent;
+    scrollbar-background: $background;
+}
