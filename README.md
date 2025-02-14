@@ -3,7 +3,7 @@
 A lightweight CLI tool for exporting and combining code files into a single context file, perfect for working with Large Language Models (LLMs).
 
 <div align="center">
-  <img src="image.webp" alt="codestract-main" width="1280"/>
+  <img src="/assets/image.webp" alt="codestract-banner" width="1280"/>
 </div>
 
 ## Features

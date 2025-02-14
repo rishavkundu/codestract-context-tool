@@ -109,7 +109,7 @@ class SummaryPanel(ScrollableContainer):
         self.selected_files = selected_files
         count = len(selected_files)
         count_label = self.query_one("#selection-count", Label)
-        count_label.update("")  # We now show the count in the file preview
+        count_label.update(f"{count} files selected")
 
     @work(thread=True)
     def update_preview(self) -> None:
